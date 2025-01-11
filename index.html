@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text In Image</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="text-center mb-4">Text In Image</h1>
+      <div class="inner-box">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="fontFamily">Font Family:</label>
+            <select
+              class="form-control font-family-options mb-3"
+              onchange="document.documentElement.style.setProperty('--selected-font-family', this.value)"
+            >
+              <option value="Trebuchet MS">Trebuchet MS</option>
+              <option value="Times New Roman">Times New Roman</option>
+              <option value="Arial">Arial</option>
+              <option value="Courier New">Courier New</option>
+              <option value="Comic Sans MS">Comic Sans MS</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Verdana">Verdana</option>
+              <option value="Garamond">Garamond</option>
+              <option value="Helvetica">Helvetica</option>
+              <option value="Palatino">Palatino</option>
+            </select>
+
+            <div class="fitInCol">
+              <label for="imageLetter">First Letter:</label>
+              <input
+                type="text"
+                class="form-control imageLetter"
+                placeholder="Enter letter (e.g., A)"
+                value="A"
+              />
+            </div>
+
+            <div class="bgInput">
+              <label for="bgColor" class="mt-3">Background Color:</label>
+              <div class="custom-color-input">
+                <input type="color" class="bgColor rounded" value="#ff0000" />
+                <span id="bgColorPreview">#FF0000</span>
+              </div>
+            </div>
+            <div class="textInput">
+              <label for="textColor" class="mt-3">Text Color:</label>
+              <div class="custom-color-input">
+                <input type="color" class="textColor rounded" value="#ffffff" />
+                <span id="textColorPreview">#FFFFFF</span>
+              </div>
+            </div>
+
+            <div class="outerIWxH">
+              <div class="innerIWxH">
+                <label for="width" class="imageWxH">Image W x H :</label>
+                <label for="width" class="imageWH">Image Width :</label>
+                <input
+                  type="number"
+                  class="form-control width"
+                  placeholder="Width (e.g., 250px)"
+                  value="250"
+                />
+              </div>
+              <div class="innerIWxH mt-2">
+                <label for="height" class="imageWH">Image Height :</label>
+                <label for="height" class="imageWxH">X</label>
+                <input
+                  type="number"
+                  class="form-control height"
+                  placeholder="Height (e.g., 250px)"
+                  value="250"
+                />
+              </div>
+            </div>
+            <div class="fitInCol">
+              <label for="shape" class="mt-3">Shape:</label>
+              <select class="form-control shape-options">
+                <option value="rectangle">Rectangle</option>
+                <option value="circle">Circle</option>
+                <option value="transparent">Transparent</option>
+              </select>
+            </div>
+            <div class="fitInCol">
+              <label for="shadow" class="mt-3">Shadow Effect:</label>
+              <select class="form-control shadow-options">
+                <option value="none">None</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="3d">3D Effect</option>
+              </select>
+            </div>
+
+            <label for="percentage" class="mt-3"
+              >Shape Percentage:
+              <span id="percentageValue" style="color: green"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0%</span
+              ></label
+            >
+            <input
+              type="range"
+              class="form-control-range percentage"
+              min="0"
+              max="50"
+              step="1"
+              value="0"
+            />
+          </div>
+          <div class="col-md-6 output">
+            <h4>Output:</h4>
+            <div id="output-container"></div>
+            <div class="fitInCol">
+              <label for="fileFormat" class="mt-3">Output Format:</label>
+              <select class="form-control file-format-options mt-3">
+                <option value="png">PNG</option>
+                <option value="svg">SVG</option>
+                <option value="jpeg">JPEG</option>
+                <option value="jpg">JPG</option>
+                <option value="ico">ICO</option>
+              </select>
+            </div>
+            <button
+              class="btn btn-success btn-custom mt-4"
+              id="download-btn"
+              style="display: none; place-self: center"
+            >
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
