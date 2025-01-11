@@ -4,7 +4,7 @@ A responsive web application that allows users to dynamically create, preview, a
 
 ## Demo
 
-Check out the [Live Demo](https://shaik-nagur-basha.github.io/enhancedTextImageGenerator/)
+Check out the [Live Demo](https://shaik-nagur-basha.github.io/Text-In-Image/)
 
 ## Features
 
@@ -35,11 +35,11 @@ Check out the [Live Demo](https://shaik-nagur-basha.github.io/enhancedTextImageG
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Shaik-Nagur-Basha/enhancedTextImageGenerator.git
+   git clone https://github.com/Shaik-Nagur-Basha/Text-In-Image.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd enhancedTextImageGenerator
+   cd Text-In-Image
    ```
 3. Open the `index.html` file in your browser:
    ```bash
@@ -58,7 +58,7 @@ enhanced-image-generator/
 
 ## Screenshots
 
-![image](https://github.com/user-attachments/assets/462366c6-31cb-48b0-8add-9095d7701187)
+![image](https://github.com/user-attachments/assets/3d93fdae-c144-4ee6-bd19-78e957f5cef7)
 
 ## License
 
