@@ -1,4 +1,4 @@
-# Enhanced Image Generator
+# Gradient Craft
 
 A responsive web application that allows users to dynamically create, preview, and download images with customizable styles, shapes, shadow effects, and formats. The tool is intuitive, modern, and perfect for generating styled image outputs.
 
@@ -49,10 +49,11 @@ Check out the [Live Demo](https://shaik-nagur-basha.github.io/Text-In-Image/)
 ## Folder Structure
 
 ```
-enhanced-image-generator/
+Text-In-Image/
 ├── index.html      # Main HTML file
 ├── styles.css      # Contains all custom CSS
 ├── script.js       # Contains JavaScript logic
+├── LICENSE         # Contains License Content
 └── README.md       # Project documentation
 ```
 
