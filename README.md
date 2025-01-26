@@ -1,4 +1,4 @@
-# Gradient Craft
+# Text In Image
 
 A responsive web application that allows users to dynamically create, preview, and download images with customizable styles, shapes, shadow effects, and formats. The tool is intuitive, modern, and perfect for generating styled image outputs.
 
